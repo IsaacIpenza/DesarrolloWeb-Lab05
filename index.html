@@ -6,6 +6,8 @@
   <title>Todo</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--jQuery Library-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
   <body>
     <header class="navbar navbar-default">
@@ -26,8 +28,8 @@
               <div class="panel-body">
                 <form class="todoForm">
                   <fieldset>
-                    <textarea class="newTodo form-control"></textarea>
-                    <button type="submit" class="submitButton"> 
+                    <textarea class="newTodo form-control" id="todoText"></textarea>
+                    <button type="submit" class="submitButton" id="ButtonPost"> 
                       Post Todo
                     </button>
                   </fieldset>
@@ -40,17 +42,17 @@
               <div class="panel-heading">
                 <h3>List of todo's</h3>
               </div>
-              <div class="panel-body" class="listOfTodos">
+              <div class="panel-body" class="listOfTodos" id="todoList">
 
               </div>
               <div class="buttons">
-                <button class="clearButton btn-info"> 
+                <button class="clearButton btn-info" id="ButtonClear"> 
                   Clear all Todo's
                 </button>
-                <button class="markAllButton btn-success"> 
+                <button class="markAllButton btn-success" id="ButtonMark"> 
                   Mark all Todo's
                 </button>
-                <button class="deleteButton btn-danger"> 
+                <button class="deleteButton btn-danger" id="ButtonDelete"> 
                   Delete all Todo's
                 </button>
               </div>
@@ -63,4 +65,6 @@
       Todo list application
     </footer>
   </body>
+
+  <script src="js/script.js"></script>
 </html>
